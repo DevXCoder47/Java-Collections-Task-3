@@ -7,6 +7,6 @@ public class Fine {
         this.fine_amount = fine_amount;
     }
     public String toString() {
-        return "Fine: " + type + " - " + fine_amount + "\n";
+        return "Fine: " + type + " - $" + fine_amount + "\n";
     }
 }

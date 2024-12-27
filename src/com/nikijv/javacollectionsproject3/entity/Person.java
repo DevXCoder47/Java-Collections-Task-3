@@ -14,12 +14,16 @@ public class Person {
         fines = new ArrayList<>();
     }
     public String toString() {
-        return "Person:\n Id: " + id + "\n Name: " + name + "\n Town: " + town + "\n Fines:\n" + showFines();
+        return "Person:\nId: " + id + "\nName: " + name + "\nTown: " + town + "\nFines:\n" + showFines();
     }
     private String showFines(){
         StringBuilder fine_string = new StringBuilder();
-        for(Fine fine : fines)
-            fine_string.append(fine);
+        if(!fines.isEmpty()) {
+            for (Fine fine : fines)
+                fine_string.append(fine);
+        }
+        else
+            fine_string.append("No fines\n");
         return fine_string.toString();
     }
 }

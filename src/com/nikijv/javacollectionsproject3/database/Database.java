@@ -134,7 +134,7 @@ public class Database {
                 return;
             }
         }
-        System.out.print("Id nor found");
+        System.out.println("Id nor found");
     }
     private void fillDatabase(){
         Person person1 = new Person("N1", "T1");

@@ -2,8 +2,6 @@ package com.nikijv.javacollectionsproject3.database;
 import com.nikijv.javacollectionsproject3.entity.Fine;
 import com.nikijv.javacollectionsproject3.entity.Person;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 import java.util.Scanner;
 public class Database {
     public ArrayList<Person> data;
